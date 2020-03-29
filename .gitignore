@@ -1,5 +1,6 @@
 chromedriver.exe
 test.py
+mp4/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
