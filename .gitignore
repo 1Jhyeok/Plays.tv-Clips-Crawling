@@ -1,5 +1,7 @@
 chromedriver.exe
 test.py
+*.html
+*.log
 mp4/
 
 # Byte-compiled / optimized / DLL files
