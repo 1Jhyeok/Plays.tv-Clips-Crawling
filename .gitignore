@@ -3,6 +3,7 @@ test.py
 *.html
 *.log
 mp4/
+.idea/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
