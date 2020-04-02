@@ -10,7 +10,7 @@
 
 pip install selenium, pip install bs4 를 하여 셀레니움과 bs4를 설치해주세요.
 
-실행하고 나서 Plays의 닉네임을 입력해주세요.
+실행하고 나서 Plays.tv의 닉네임을 입력해주세요.
 
 그러면 브라우저가 열리고 최하단까지 스크롤합니다.
 
