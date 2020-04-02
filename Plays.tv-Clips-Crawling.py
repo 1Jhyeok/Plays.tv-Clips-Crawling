@@ -21,7 +21,8 @@ def getUrls(html):
 
     videoUrls = []
     titles = []
-    errcnt = 0
+    errskipcnt = 0
+    existskipcnt = 0
 
     #1 각 비디오 링크 추출
     for link in soup.find("div", class_="mod mod-user-videos activity-feed inited").find_all("div", class_="info"):
@@ -36,13 +37,14 @@ def getUrls(html):
     for (url, title) in zip(videoUrls, titles):
         print("URL: " + url)
         filename = "mp4//" + title + ".mp4"
+        print("")
 
         if not os.path.exists(filename):
             try:
                 sourcecode = urlopen(url).read()
             except HTTPError as e:
                 print("Title: " + title + " is HTTP Error Skip")
-                errcnt + 1
+                errskipcnt + 1
                 continue
 
             soup = BeautifulSoup(sourcecode, "lxml")
@@ -59,10 +61,12 @@ def getUrls(html):
             download(mp4, title)
         else:
             print("Title: " + title + " is Exist, skip!")
+            existskipcnt + 1
 
     
     print("Total: " + str(len(titles)))
-    print("Error: " + str(errcnt))
+    print("Exist: " + str(existskipcnt))
+    print("HTTP Error: " + str(errskipcnt))
 
 def main():
     username = input("Input your Plays.tv's Username: ")
