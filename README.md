@@ -1,12 +1,12 @@
 # Plays.tv Clips Crawling
 
-# 왜 만들었는가?
-입대했는데 그 사이 서비스가 중단되어서 클립을 다운받지 못하여 만들었습니다.
+# 왜
+입대했는데 그 사이 Plays.tv서비스가 중단되어서 클립을 다운받지 못해서.
 
-# 어떻게 사용하는가?
-파이썬을 [다운로드](https://www.python.org/downloads/)해주세요.(파이썬 3.8 사용)
+# 사용법
+파이썬 [다운로드](https://www.python.org/downloads/)(파이썬 3.8 사용)
 
-크롬브라우저의 버전에 맞는 크롬드라이버를 [다운로드](https://chromedriver.chromium.org/downloads)하여 파이썬 파일과 동일한 경로에 위치해주세요.
+크롬브라우저의 버전에 맞는 크롬드라이버를 [다운로드](https://chromedriver.chromium.org/downloads)하고 파이썬 파일과 동일한 경로에 위치.
 
 pip install selenium, pip install bs4 를 하여 셀레니움과 bs4를 설치해주세요.
 
